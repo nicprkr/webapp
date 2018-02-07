@@ -18,7 +18,7 @@ handleImg(evt){
         
     }
     componentDidMount(){
-        this.socket = mySocket("http://localhost:10000");
+        this.socket = mySocket("https://lab5-sockets.herokuapp.com/");
         this.socket.on("userjoined", (data)=>{
            this.setState({
                allusers:data
